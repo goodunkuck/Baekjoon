@@ -15,7 +15,7 @@ public class Baekjoon_16428 {
 		BigInteger B = new BigInteger(st.nextToken());
 		
 		if(A.compareTo(BigInteger.ZERO) == -1 && B.compareTo(BigInteger.ZERO) == -1) {
-			System.out.println((A.divide(B))/*.add(BigInteger.ONE)*/);
+			System.out.println((A.divide(B)).add(BigInteger.ONE));
 			System.out.println((A.remainder(B)).subtract(B));
 		}else if(A.compareTo(BigInteger.ZERO) == -1 && B.compareTo(BigInteger.ZERO) == 1){
 			System.out.println((A.divide(B)).subtract(BigInteger.ONE));
