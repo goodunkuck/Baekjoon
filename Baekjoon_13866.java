@@ -17,6 +17,7 @@ public class Baekjoon_13866 {
 		}
 		//정렬
 		Arrays.sort(arr);
+		
 		//합의 차이를 구하고 절대값을 출력
 		System.out.println(Math.abs((arr[0] + arr[3]) - (arr[1] + arr[2])));
 		
