@@ -11,7 +11,9 @@ public class Baekjoon_10984 {
 		
 		for(int i = 0; i < T; i++) {
 			int N = Integer.parseInt(br.readLine());
+			//총학점 저장 할 변수
 			int Csum = 0;
+			//학점 평균을 구하기위한 변수 소수이기때문에 double형으로 선언
 			double Gave = 0;
 			
 			for(int j = 0; j < N; j++) {
@@ -22,6 +24,7 @@ public class Baekjoon_10984 {
 				Csum += C;
 				Gave += (G * C);
 			}
+			//총합과 학점 평균을 출력(학점 평균은 모든 과목의 (학점 * 점수)를 구한 Gave에 총 학점인 Csum을 나눠준다.
 			System.out.println(Csum + " " + String.format("%.1f", (Gave / Csum)));
 		}
 	}
