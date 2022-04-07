@@ -8,22 +8,11 @@ public class Baekjoon_1543 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String S = br.readLine();
 		String S2 = br.readLine();
+		//미리 처음의 S 문자열의 길이를 재어준다.
 		int size = S.length();
 		int size2 = S2.length();
-		int count = 0;
-//		for(int i = 0; i < size; i++) {
-//			if(S.charAt(i) == S2.charAt(0) && size >= size2) {
-//				for(int j = 0; j < size2; j++) {
-//					if(S.charAt(i + j) != S.charAt(j)) break;
-//					if(j == size2 - 1) {
-//						count++;
-//						i = 0;
-//						S = S.substring((i + j), size - 1);
-//						size = S.length();
-//					}
-//				}
-//			}
-//		}
+		
+		//S2를 지워준다.
 		S = S.replace(S2, "");
 		System.out.println((size - S.length()) / size2);
 	}
